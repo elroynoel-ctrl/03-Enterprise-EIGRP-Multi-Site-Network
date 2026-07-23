@@ -29,7 +29,7 @@ The goal of the project was to design, configure, verify, troubleshoot, and docu
 
 # Enterprise Topology
 
-![Enterprise Topology](Images/enterprise-eigrp-topology.png)
+![Enterprise Topology](Images/Enterprise-EIGRP-multi-site-network.png)
 
 ---
 
