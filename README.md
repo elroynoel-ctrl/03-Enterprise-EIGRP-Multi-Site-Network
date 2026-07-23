@@ -45,7 +45,7 @@ The goal of the project was to design, configure, verify, troubleshoot, and docu
 - Centralized DNS Server
 - DHCP Relay
 - NAT Overload (PAT)
-- PPP WAN connection
+- Serial WAN Connection (Cisco HDLC)
 - Static default route redistribution
 - Simulated Internet (8.8.8.8)
 - End-to-end verification
@@ -80,7 +80,7 @@ The goal of the project was to design, configure, verify, troubleshoot, and docu
 - DNS
 - NAT/PAT
 - DHCP Relay
-- PPP
+- HDLC
 - Static Routing
 - Route Redistribution
 
@@ -147,7 +147,7 @@ All routers successfully exchanged routes and all branch clients received DHCP l
 - DHCP Relay
 - DNS Configuration
 - NAT/PAT
-- PPP WAN Configuration
+- Serial WAN Connection (Cisco HDLC)
 - Route Redistribution
 - Enterprise Network Verification
 - Network Troubleshooting
