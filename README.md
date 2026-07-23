@@ -1,6 +1,12 @@
 # Enterprise EIGRP Multi-Site Network
 
-> Enterprise campus network built in Cisco Packet Tracer demonstrating EIGRP routing, router redundancy, centralized DHCP, DNS, NAT/PAT, DHCP Relay, Router-on-a-Stick, and enterprise verification.
+![Cisco IOS](...)
+![Packet Tracer](...)
+![EIGRP](...)
+![CCNA](...)
+![Enterprise Networking](...)
+
+> Enterprise campus network built in Cisco Packet Tracer demonstrating EIGRP routing, Router-on-a-Stick, centralized DHCP, DNS, NAT/PAT, DHCP Relay, and enterprise verification.
 
 ---
 
@@ -30,6 +36,16 @@ The goal of the project was to design, configure, verify, troubleshoot, and docu
 # Enterprise Topology
 
 ![Enterprise Topology](Images/Enterprise-EIGRP-Multi-site-network.png)
+
+---
+
+# Design Decisions
+
+- EIGRP was selected to demonstrate enterprise dynamic routing in a multi-site environment.
+- DHCP and DNS services were centralized at Headquarters to simplify management.
+- Router-on-a-Stick was used to provide inter-VLAN routing without Layer 3 switches.
+- Cisco HDLC was used on the serial WAN connection because it is the default Cisco encapsulation for point-to-point links in this implementation.
+- NAT Overload (PAT) was implemented at Headquarters to provide Internet connectivity for all branch locations.
 
 ---
 
@@ -107,9 +123,12 @@ The goal of the project was to design, configure, verify, troubleshoot, and docu
 │   ├── Troubleshooting.md
 │   └── Lessons-Learned.md
 │
-├── Images/
-│
-├── Packet-Tracer/
+Images/
+├── Enterprise-EIGRP-Professional-Topology.png
+├── Enterprise-EIGRP-PacketTracer-Topology.png
+|
+Packet-Tracer/
+└── Enterprise-EIGRP-Multi-Site-Network.pkt
 │
 └── README.md
 ```
@@ -183,11 +202,11 @@ All routers successfully exchanged routes and all branch clients received DHCP l
 
 # Author
 
-**Elroy Noel**
+## Elroy Noel
 
-Aspiring Network Engineer
+CCNA Certified | Aspiring Network Engineer
 
-- CCNA Certified
-- Building enterprise networking projects
-- Learning advanced routing and switching
-- GitHub Portfolio: https://github.com/elroynoel-ctrl
+Passionate about designing, building, verifying, and documenting enterprise networking solutions while expanding my expertise in routing, switching, and network automation.
+
+GitHub:
+https://github.com/elroynoel-ctrl
