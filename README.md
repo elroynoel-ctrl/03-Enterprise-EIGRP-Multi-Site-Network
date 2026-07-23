@@ -36,7 +36,7 @@ The goal of the project was to design, configure, verify, troubleshoot, and docu
 
 # Enterprise Topology
 
-![Enterprise Topology](Images/Enterprise-EIGRP-Multi-site-network.png)
+![Enterprise Topology](Images/Enterprise-EIGRP-Professional-Topology.png)
 
 > **Note:** This repository includes both the original Cisco Packet Tracer topology used during implementation and a professional enterprise topology diagram created for documentation and presentation.
 ---
