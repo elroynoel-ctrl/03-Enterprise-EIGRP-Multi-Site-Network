@@ -1,10 +1,11 @@
 # Enterprise EIGRP Multi-Site Network
 
-![Cisco IOS](...)
-![Packet Tracer](...)
-![EIGRP](...)
-![CCNA](...)
-![Enterprise Networking](...)
+![Project Elevate](https://img.shields.io/badge/Project-Elevate%20%2303-FF6F00?style=for-the-badge)
+![Cisco IOS](https://img.shields.io/badge/Cisco-IOS-1BA0D7?style=for-the-badge)
+![Packet Tracer](https://img.shields.io/badge/Lab-Packet%20Tracer-28A745?style=for-the-badge)
+![EIGRP](https://img.shields.io/badge/Routing-EIGRP-C0392B?style=for-the-badge)
+![Enterprise Network](https://img.shields.io/badge/Enterprise-Network-6F42C1?style=for-the-badge)
+![Completed](https://img.shields.io/badge/Status-Completed-2ECC71?style=for-the-badge)
 
 > Enterprise campus network built in Cisco Packet Tracer demonstrating EIGRP routing, Router-on-a-Stick, centralized DHCP, DNS, NAT/PAT, DHCP Relay, and enterprise verification.
 
@@ -37,6 +38,7 @@ The goal of the project was to design, configure, verify, troubleshoot, and docu
 
 ![Enterprise Topology](Images/Enterprise-EIGRP-Multi-site-network.png)
 
+> **Note:** This repository includes both the original Cisco Packet Tracer topology used during implementation and a professional enterprise topology diagram created for documentation and presentation.
 ---
 
 # Design Decisions
@@ -123,15 +125,14 @@ The goal of the project was to design, configure, verify, troubleshoot, and docu
 │   ├── Troubleshooting.md
 │   └── Lessons-Learned.md
 │
-Images/
-├── Enterprise-EIGRP-Professional-Topology.png
-├── Enterprise-EIGRP-PacketTracer-Topology.png
-|
-Packet-Tracer/
-└── Enterprise-EIGRP-Multi-Site-Network.pkt
+├── Images/
+│   ├── Enterprise-EIGRP-Professional-Topology.png
+│   └── Enterprise-EIGRP-PacketTracer-Topology.png
+│
+├── Packet-Tracer/
+│   └── Enterprise-EIGRP-Multi-Site-Network.pkt
 │
 └── README.md
-```
 
 ---
 
