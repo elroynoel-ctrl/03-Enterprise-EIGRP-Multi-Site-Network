@@ -48,6 +48,7 @@ The goal of the project was to design, configure, verify, troubleshoot, and docu
 - Router-on-a-Stick was used to provide inter-VLAN routing without Layer 3 switches.
 - Cisco HDLC was used on the serial WAN connection because it is the default Cisco encapsulation for point-to-point links in this implementation.
 - NAT Overload (PAT) was implemented at Headquarters to provide Internet connectivity for all branch locations.
+- A default route was redistributed into EIGRP so branch routers could reach external networks without maintaining individual static Internet routes.
 
 ---
 
@@ -133,6 +134,7 @@ The goal of the project was to design, configure, verify, troubleshoot, and docu
 │   └── Enterprise-EIGRP-Multi-Site-Network.pkt
 │
 └── README.md
+```
 
 ---
 
@@ -175,7 +177,7 @@ All routers successfully exchanged routes and all branch clients received DHCP l
 
 ---
 
-# Documentation
+# Project Documentation
 
 | Document | Description |
 |-----------|-------------|
@@ -189,11 +191,11 @@ All routers successfully exchanged routes and all branch clients received DHCP l
 # Future Improvements
 
 - IPv6 implementation
-- Dual ISP connectivity
-- HSRP gateway redundancy
-- EtherChannel
-- Layer 3 switching
 - ACL security
+- Layer 3 switching
+- EtherChannel
+- HSRP gateway redundancy
+- Dual ISP connectivity
 - SNMP monitoring
 - Syslog server
 - NTP synchronization
@@ -209,5 +211,5 @@ CCNA Certified | Aspiring Network Engineer
 
 Passionate about designing, building, verifying, and documenting enterprise networking solutions while expanding my expertise in routing, switching, and network automation.
 
-GitHub:
-https://github.com/elroynoel-ctrl
+GitHub: <https://github.com/elroynoel-ctrl>
+
