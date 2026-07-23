@@ -1,1 +1,116 @@
+Current configuration : 1503 bytes
+!
+version 15.1
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+no service password-encryption
+!
+hostname BR3
+!
+!
+!
+!
+!
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+!
+!
+!
+license udi pid CISCO2911/K9 sn FTX1524DO33-
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+spanning-tree mode pvst
+!
+!
+!
+!
+!
+!
+interface Loopback0
+ ip address 4.4.4.4 255.255.255.255
+!
+interface GigabitEthernet0/0
+ description Link to BR2
+ ip address 10.0.34.2 255.255.255.252
+ duplex auto
+ speed auto
+!
+interface GigabitEthernet0/1
+ description link to HQ
+ ip address 10.0.41.1 255.255.255.252
+ duplex auto
+ speed auto
+!
+interface GigabitEthernet0/2
+ description Trunk to BR3SW1
+ no ip address
+ duplex auto
+ speed auto
+!
+interface GigabitEthernet0/2.10
+ description Managment VLAN
+ encapsulation dot1Q 10
+ ip address 192.168.80.1 255.255.255.0
+!
+interface GigabitEthernet0/2.20
+ description Users VLAN
+ encapsulation dot1Q 20
+ ip address 192.168.90.1 255.255.255.0
+ ip helper-address 192.168.30.100
+!
+interface GigabitEthernet0/2.99
+ description Native VLAN
+ encapsulation dot1Q 99 native
+ no ip address
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+router eigrp 100
+ eigrp router-id 4.4.4.4
+ passive-interface default
+ no passive-interface GigabitEthernet0/0
+ no passive-interface GigabitEthernet0/1
+ network 10.0.34.0 0.0.0.3
+ network 10.0.41.0 0.0.0.3
+ network 192.168.80.0
+ network 192.168.90.0
+ network 4.4.4.4 0.0.0.0
+!
+ip classless
+!
+ip flow-export version 9
+!
+!
+!
+!
+!
+!
+!
+line con 0
+!
+line aux 0
+!
+line vty 0 4
+ login
+!
+!
+!
+end
 
